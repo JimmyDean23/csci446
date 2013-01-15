@@ -2,7 +2,9 @@ body {
 	margin-top: 0em;
 	margin-left: 1em;
 	margin-right: 1em;
-	border: solid;
+	border-style: solid;
+	border-width: thin;
+	font-family: sans-serif;
 }
 
 h1 {
@@ -11,14 +13,14 @@ h1 {
 
 #header p {
 	color:#666666;
-	font-size: 11pt;
+	font-size: 10pt;
 }
 
 #header {
 	background-color:#cccccc;
 	padding: .5em;
 	text-align: left;
-	line-height: 50%;
+	line-height: 25%;
 }
 
 #menubar {
@@ -42,17 +44,52 @@ li {
     color: #ffffff;
 }
 
+a {
+	text-decoration: none;
+}
+
+a.tooltip span {
+	display: none; 
+	padding: 2px 3px; 
+	margin-left: 8px; 
+	width: 130px;
+}
+
+a.tooltip:hover span {
+	display: inline;
+	position: absolute;
+	background: #ffffff; 
+	color: #6c6c6c;
+}
+
+a:visited {
+	color:#ffffff;
+}
+
+a:link {
+	color:#ffffff
+}
+
+a:hover {
+	color:#ff00ff;
+}
 
 #sidebar {
+	float: right;
+	margin: .5em;
 	background-color:#f0f0ff;
 	padding: .5em;
 	text-align: left;
 }
 
+#content {
+	padding: .5em;	
+	height: 12em;
+}
+
 footer {
-    margin-left: auto;
-    margin-right: auto;
 	background-color:#f0f0f0;
-	padding: .5em;
+	font-size: 10pt;
+	padding: .1em;
 	text-align: center;
 }
