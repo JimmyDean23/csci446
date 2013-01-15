@@ -1,26 +1,29 @@
 body {
 	margin-top: 0em;
-	margin-left: 1em;
-	margin-right: 1em;
+	margin-left: 2em;
+	margin-right: 2em;
 	border-style: solid;
 	border-width: thin;
-	font-family: sans-serif;	
-}
-
-h1 {
-	letter-spacing: -.05em;
-}
-
-#header p {
-	color:#666666;
-	font-size: 10pt;
+	font-family: sans-serif;
+	background-color: #a7a7a7;
 }
 
 #header {
 	background-color:#cccccc;
 	padding: .5em;
 	text-align: left;
-	line-height: 25%;
+	line-height: 40%;
+}
+
+#header p {
+	color:#666666;
+	font-size: 10pt;
+	margin-bottom: .5em;
+}
+
+#header h1 {
+	letter-spacing: -.05em;
+	margin-top: .5em;
 }
 
 #menubar {
@@ -31,6 +34,7 @@ h1 {
 
 ul {
 	width: 100%;
+	padding-left: 0em;
     margin: 0 auto 0 auto;
 }
 
@@ -81,9 +85,18 @@ a:hover {
 	text-align: left;
 }
 
+#sidebar h3 {
+	margin-top: 0em;
+}
+
 #content {
+	background-color: #ffffff;
 	padding: .5em;	
-	height: 12em;
+	height: 14em;
+}
+
+#content h2 {
+	margin-top: 0em;
 }
 
 footer {
