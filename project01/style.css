@@ -4,7 +4,7 @@ body {
 	margin-right: 1em;
 	border-style: solid;
 	border-width: thin;
-	font-family: sans-serif;
+	font-family: sans-serif;	
 }
 
 h1 {
@@ -85,6 +85,18 @@ a:hover {
 #content {
 	padding: .5em;	
 	height: 12em;
+}
+
+#content select {
+	left: 10em;
+}
+
+#content input {
+	left: 10em;
+}
+
+#content button {
+	left: 10em;
 }
 
 footer {

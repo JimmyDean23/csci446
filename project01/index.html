@@ -48,16 +48,29 @@
         </div>
         <div id=content>
             <h2>Lorem Ipsum Dolor Sit Amet.</h2>
-            <label>How do you feel today?</label>
-            <input type="text" name="feel_today" maxlength="50" /><br /><br />
-            <label>How would you like to feel?<br>(choose all that apply)</label>
-            <select size="4" multiple>
-                <option value="numb">Comfortably numb</option>
-                <option value="poop">Grumpy as poop, you jerk</option>
-                <option value="happy">Happy like I'm on controlled substances</option>
-                <option value="normal">Normal. Absolutely Normal.</option>
-            </select>
-            <button>Feel me!</button>
+
+            <table>
+                <tr>
+                    <td><label>How do you feel today?</label></td>
+                    <td><input type="text" name="feel_today" maxlength="50" /></td>
+                </tr>
+                <tr>
+                    <td><label>How would you like to feel?<br />(choose all that apply)</label></td>
+                    <td>
+                        <select name="how_to_feel" size="4" multiple>
+                            <option value="numb">Comfortably numb</option>
+                            <option value="poop">Grumpy as poop, you jerk</option>
+                            <option value="happy">Happy like I'm on controlled substances</option>
+                            <option value="normal">Normal. Absolutely Normal.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button>Feel me!</button></td>
+                </tr>
+                
+            </table>            
         </div>
         <footer>
             <p>&copy; 2011 Borg-Like Monstrosity of Mind Control, Inc. All rights reserved.</p>
