@@ -50,16 +50,15 @@ a {
 
 a.tooltip span {
 	display: none; 
-	padding: 2px 3px; 
-	margin-left: 8px; 
-	width: 130px;
+	margin-left: 2em;
+	width: 10em;
 }
 
 a.tooltip:hover span {
 	display: inline;
 	position: absolute;
-	background: #ffffff; 
-	color: #6c6c6c;
+	background: #000000;
+	color: #ffffff;
 }
 
 a:visited {
@@ -85,18 +84,6 @@ a:hover {
 #content {
 	padding: .5em;	
 	height: 12em;
-}
-
-#content select {
-	left: 10em;
-}
-
-#content input {
-	left: 10em;
-}
-
-#content button {
-	left: 10em;
 }
 
 footer {
