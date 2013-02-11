@@ -1,86 +1,78 @@
 body {
-	margin-top: 0em;
-	margin-left: 2em;
-	margin-right: 2em;
-	border-style: solid;
-	border-width: thin;
-	font-family: sans-serif;
-	background-color: #a7a7a7;
+	margin-top: 0;
+	font-family: helvetica, arial, sans-serif;
+	background-color: #A7A7A7;
 }
 
-#header {
-	background-color:#cccccc;
-	padding: .5em;
-	text-align: left;
-	line-height: 40%;
+#container {
+	width: 960px;
+	margin: auto;
+	border: 1px solid black;
+	background-color: #FCFCFC;
 }
 
-#header p {
-	color:#666666;
-	font-size: 10pt;
-	margin-bottom: .5em;
+#masthead {
+	margin: 0px;
+	background-color:#CCCCCC;
+	padding: 10px 0px 10px 10px;
 }
 
-#header h1 {
+#masthead h1 {
 	letter-spacing: -.05em;
-	margin-top: .5em;
+	margin: 0px;
+}
+
+#masthead p.lead {
+	color:#666666;
+	font-size: .8em;
+	margin: 0px;
 }
 
 #menubar {
-	width: 100%;
-	height: 2em;
+	margin: 0px;
+	padding: 10px;
 	background-color:#000000;
 }
 
-ul {
-	width: 100%;
-	padding-left: 0em;
-    margin: 0 auto 0 auto;
+#menubar ul {
+	list-style-type: none;
+	padding: 0em;
+    margin: 0;
+    color: #FFFFFF;
 }
 
-li {
-	float:left;
-	padding:0 1em 0 1em;
-    text-align: center;
-    display: block;
-    line-height: 2em;
-    height: 2em;
-    color: #ffffff;
+#menubar ul li {
+    display: inline;
+    margin-right: 30px;
 }
 
-a {
+#menubar ul li a {
 	text-decoration: none;
+	color: #FFFFFF;
 }
 
-a.tooltip span {
-	display: none; 
-	margin-left: 2em;
-	width: 10em;
+#menubar ul li a:hover {
+	color:#FF00FF;
 }
 
-a.tooltip:hover span {
-	display: inline;
-	position: absolute;
-	background: #000000;
-	color: #ffffff;
+#content {
+	background-color: #FFFFFF;
+	padding: 10px;
 }
 
-a:visited {
-	color:#ffffff;
+#main {
+	float: left;
+	width: 600px;
 }
 
-a:link {
-	color:#ffffff
-}
-
-a:hover {
-	color:#ff00ff;
+#main h2 {
+	margin-top: 0px;
 }
 
 #sidebar {
 	float: right;
 	margin: .5em;
-	background-color:#f0f0ff;
+	background-color:#F0F0FF;
 	padding: .5em;
 	text-align: left;
 }
@@ -89,18 +81,8 @@ a:hover {
 	margin-top: 0em;
 }
 
-#content {
-	background-color: #ffffff;
-	padding: .5em;	
-	height: 14em;
-}
-
-#content h2 {
-	margin-top: 0em;
-}
-
-footer {
-	background-color:#f0f0f0;
+#footer {
+	background-color:#F0F0F0;
 	font-size: 10pt;
 	padding: .1em;
 	text-align: center;
