@@ -5,6 +5,13 @@
 	</head>
 	<body>
 		<h1>Rolling Stone's Top 100 Albums of All Time</h1>
+		<table>
+			<% albums.each_with_index do |album, i| %>
+			<tr>
+				<td><%= i+1 %></td>
+				<td><%= album.chomp %></td>
+			</tr>
+			<% end %>
 		</table>
 	</body>
 </html>

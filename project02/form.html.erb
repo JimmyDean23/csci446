@@ -13,6 +13,9 @@
 			</select>
 			<label for="rank">Select a Rank to Highlight</label>
 			<select name="rank">
+				<% (1..100).each do |i| %>
+					<option value="<%= i %>"><%= i %></option>
+				<% end %>
 			</select>
 			<input type="submit" value="Display List">
 		</form>
