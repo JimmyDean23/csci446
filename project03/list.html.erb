@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Top 100 Albums of All Time</title>
+		<style>tr.highlighted { background-color: #fffcb7; }</style>
+	</head>
+	<body>
+		<h1>Rolling Stone's Top 100 Albums of All Time</h1>
+		<p>Sorted by <%= sort_order.capitalize %>
+		<table>
+			<% albums.each do |album| %>
+			<tr<%= album.rank == rank_to_highlight ? " class=\"highlighted\"" : "" %>>
+				<td><%= album.rank %></td>
+				<td><%= album.name %></td>
+				<td><%= album.year %></td>
+			</tr>
+			<% end %>
+		</table>
+	</body>
+</html>
