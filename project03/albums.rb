@@ -29,9 +29,6 @@ class AlbumApp
 		db.execute("SELECT * FROM albums ORDER BY #{sort_order};") do |row|
 			albums << Album.new(row)
 		end
-		albums.sort! do |l, r|
-			l.send(sort_order.intern) <=> r.send(sort_order.intern)
-		end
 		Rack::Response.new(ERB.new(File.read("list.html.erb")).result(binding))
 	end
 
