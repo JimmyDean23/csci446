@@ -25,7 +25,6 @@ class AlbumApp
 		db = SQLite3::Database.new("albums.sqlite3.db")
 		db.results_as_hash = true
 		albums = Array.new
-		puts sort_order
 		db.execute("SELECT * FROM albums ORDER BY #{sort_order};") do |row|
 			albums << Album.new(row)
 		end
