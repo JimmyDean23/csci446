@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require 'rack'
 require 'erb'
+require_relative 'album'
 
 class AlbumApp
 	def call(env)
@@ -17,7 +18,15 @@ class AlbumApp
 	end
 
 	def render_list(request)
-		albums = File.readlines("top_100_albums.txt")
+		sort_order = request.params['order']
+		rank_to_highlight = request.params['rank'].to_i
+
+		albums = File.readlines("top_100_albums.txt").each_with_index.map do |record, i|
+			Album.new(i+1, record)
+		end
+		albums.sort! do |l, r|
+			l.send(sort_order.intern) <=> r.send(sort_order.intern)
+		end
 		Rack::Response.new(ERB.new(File.read("list.html.erb")).result(binding))
 	end
 
