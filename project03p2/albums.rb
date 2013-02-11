@@ -9,3 +9,12 @@ set :port, 8080
 get "/" do
   "Sinatra is working!"
 end
+
+get "/form" do
+
+end
+
+post "/list/:order/:rank" do
+	@albums = Album.all(:order => [ :id.desc ], :limit => 20)
+    erb :index
+end

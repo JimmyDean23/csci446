@@ -1,0 +1,10 @@
+		<p>Sorted by <%= sort_order.capitalize %>
+		<table>
+			<% albums.each do |album| %>
+			<tr<%= album.rank == rank_to_highlight ? " class=\"highlighted\"" : "" %>>
+				<td><%= album.rank %></td>
+				<td><%= album.title %></td>
+				<td><%= album.year %></td>
+			</tr>
+			<% end %>
+		</table>
