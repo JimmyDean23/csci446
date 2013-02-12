@@ -11,10 +11,12 @@ get "/" do
 end
 
 get "/form" do
-
+	@page_content = "form.html.erb"
+	erb :index
 end
 
-post "/list/:order/:rank" do
-	@albums = Album.all(:order => [ :id.desc ], :rank => 20)
-    erb :index
+post "/list/:order" do
+	#@albums = Album.all(:order => params[:order].intern.asc)
+	@page_content = "list.html.erb"
+	erb :index
 end
